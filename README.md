@@ -43,3 +43,11 @@ Validates `token` by `publicKey`. If it's valid this async object represents `tr
 **`JWTOfRequest(request[, tokenName])`**
 
 Retrieves `JWT` from `Authorization` header of incoming request parsing by `tokenName`(by default it's `Bearer`).
+
+**`JWTPayload(token)`**
+
+Retrieves payload from `token`.
+
+**`JWTPayloadValue(token, key)`**
+
+Retrieves payload value from `token` by `key`.
