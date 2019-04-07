@@ -22,6 +22,8 @@ You can find examples of using this library in the [test directory](https://gith
 
 `npm run build`
 
+## Async objects
+
 **`GeneratedHS256JWT(payload, secret[, minutesFromNow])`**
 
 Generates JWT using `HS256` algorithm. You can also use parameter `minutesFromNow` to set expiration time to `payload`(`payload` object will not be changed, it will be copied with set `exp` property).
