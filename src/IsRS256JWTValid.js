@@ -16,7 +16,7 @@ class IsRS256JWTValid extends AsyncObject {
         return false
       }
       const payload = this.base64UrlDecodeToJSON(parts[1])
-      const signature = this.escape(parts[2])
+      const signature = this.unescape(parts[2])
       const exp = payload.exp
       if (exp) {
         if (exp < new Date().getTime()) {
@@ -30,12 +30,12 @@ class IsRS256JWTValid extends AsyncObject {
   base64UrlDecodeToJSON (str) {
     return JSON.parse(
       Buffer.from(
-        this.escape(str), 'base64'
+        this.unescape(str), 'base64'
       ).toString('utf8')
     )
   }
 
-  escape (str) {
+  unescape (str) {
     return str.replace(/-/g, '+').replace(/_/g, '/')
   }
 
