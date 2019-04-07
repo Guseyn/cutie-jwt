@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/Guseyn/cutie-jwt.svg?branch=master)](https://travis-ci.org/Guseyn/cutie-jwt)
 [![codecov](https://codecov.io/gh/Guseyn/cutie-jwt/branch/master/graph/badge.svg)](https://codecov.io/gh/Guseyn/cutie-jwt)
 
-[Cutie](https://github.com/Guseyn/cutie) extension for generating and validating JWT. It's based on the [Async Tree Pattern](https://github.com/Guseyn/async-tree-patern/blob/master/Async_Tree_Patern.pdf).
+[Cutie](https://github.com/Guseyn/cutie) extension for generating and validating **JWT**. It's based on the [Async Tree Pattern](https://github.com/Guseyn/async-tree-patern/blob/master/Async_Tree_Patern.pdf).
 
 ## Examples
 
@@ -12,7 +12,7 @@ You can find examples of using this library in the [test directory](https://gith
 
 ## Install
 
-`npm install @cuties/json`
+`npm install @cuties/jwt`
 
 ## Run test
 
